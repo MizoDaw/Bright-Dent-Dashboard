@@ -25,10 +25,9 @@ svg {
 .tox-notification {
     display: none !important;
 }
-.tox-notification tox-notification--in tox-notification--warning{
-    display: none !important;
-}
-
+.tox .tox-notification--in{
+    opacity: 0 !important;
+   }
 
 
 .not_foound_page{
