@@ -12,7 +12,6 @@ function EditSocialMedia() {
   const {status , mutate } = useUpdateSocialMedia();
 
   const handleSubmit = (value:InitialValues)=>{
-      // console.log(value);
 
       const dataToSend = getDataToSend({...value ,social_media_id:value.id , is_active :value.is_active ? true:false })
 
