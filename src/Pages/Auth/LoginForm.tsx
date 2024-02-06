@@ -29,7 +29,7 @@ const LoginForm = () => {
 
   return (
     <div className='LoginForm'>
-      <img className='Logo' src="/logo.png" alt="Logo" />
+      <img className='Logo' src="/Logo.png" alt="Logo" />
 
       <nav className='Login_Nav'>
         <h5> {t("Login")} </h5>
