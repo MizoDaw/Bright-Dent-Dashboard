@@ -12,6 +12,8 @@
 @include Shadow;
 overflow-y: auto;
 overflow-x: hidden;
+top: 0;
+left: 0;
 &::-webkit-scrollbar {
   width: 7px; 
     cursor: pointer;
