@@ -20,7 +20,7 @@ const Auth = () => {
         <div className="Left_Col">
           <img
                 // src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
-                src='logo.png'
+                src='Logo.png'
                 className="img-fluid"
                 alt="Phone"
               />
