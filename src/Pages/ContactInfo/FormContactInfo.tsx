@@ -16,7 +16,7 @@ function FormContact() {
     <Row xs={1} sm={1} md={1} lg={2} xl={2}>
       <Col>
       {/* name from form utils */}
-        <KarimField name="key" type="text" label='key'  placeholder='key' />
+        <KarimField name="key" isDisabled type="text" label='key'  placeholder='key' />
         
       </Col>
       <Col>

@@ -20,7 +20,7 @@ function ContactInfoPage() {
       <DashHeader  showAddButton={false} title={'ContactInfo'}></DashHeader>
 
       <LyTable
-        data={data?.data}
+        data={data}
         total={data?.pagination?.total}
         is_pagination={true}
         isLoading={false}

@@ -3,7 +3,6 @@ import React, { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import Actions from "../../Components/Ui/tables/Actions";
 
-function fnDelete(props :any ){}
 
 const useTableColumns :any = () => {
   const [t] = useTranslation();
@@ -29,7 +28,7 @@ const useTableColumns :any = () => {
         name: "#",
         sortable: false,
         center: "true",
-        cell: (row) => (
+        cell: (row:any) => (
             <Actions
 
             // importnat to return the row in on Edit Function to store in objectToEdit That Upper in Edit Modal 
@@ -38,8 +37,7 @@ const useTableColumns :any = () => {
               objectToEdit={row}
               showEdit={true}
               showView={false}
-              // showDelete={false}
-              // showDelete={false}
+              showDelete={false}
               // onDelete={() => fnDelete({ id: row.id })}
             />
         ),

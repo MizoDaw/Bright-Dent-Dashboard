@@ -3,21 +3,20 @@ import * as Yup from "yup";
 import { buildFormData } from "../../api/helper/buildFormData";
 
 interface formUtilCommon {
-  email:string,
-  location:string,
-  phone:number,
+  key:string,
+  value:string,
 
 }
 
 interface ObjectToEdit extends formUtilCommon {
-
+  key:string,
+  value:string,
+  id:number,
 
 }
 
-interface InitialValues extends ObjectToEdit {
-  email:string,
-  location:string,
-  phone:number,
+export interface InitialValues extends ObjectToEdit {
+
 
 }
 interface ValidateSchema  extends formUtilCommon{
@@ -28,9 +27,9 @@ export const getInitialValues = (objectToEdit: ObjectToEdit | null = null): Init
  
 
   return {
-    email:objectToEdit?.email?? "",
-    location:objectToEdit?.location?? "",
-    phone:objectToEdit?.phone?? 0,
+    id:objectToEdit?.id?? 0 ,
+    key:objectToEdit?.key?? "",
+    value:objectToEdit?.value?? "",
     
   }
 
@@ -40,9 +39,8 @@ export const getInitialValues = (objectToEdit: ObjectToEdit | null = null): Init
 export const getValidationSchema = (editMode: boolean = false): Yup.Schema<ValidateSchema> => {
     // validate input  
   return Yup.object().shape({
-    email:Yup.string().required("required"),
-    location:Yup.string().required('required'),
-    phone:Yup.number().required('required'),
+    key:Yup.string().required("required"),
+    value:Yup.string().required('required'),
 
 
   });
