@@ -21,8 +21,6 @@ function ContactInfoPage() {
 
       <LyTable
         data={data}
-        total={data?.pagination?.total}
-        is_pagination={true}
         isLoading={false}
         columns={column}
       />

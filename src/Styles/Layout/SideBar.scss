@@ -8,12 +8,11 @@
     height: 100%;
     position: fixed;
     background: var(--bg);
+
     transition: .3s ease-in-out;
 @include Shadow;
 overflow-y: auto;
 overflow-x: hidden;
-top: 0;
-left: 0;
 &::-webkit-scrollbar {
   width: 7px; 
     cursor: pointer;
@@ -241,7 +240,7 @@ left: 0;
         margin-inline: 40px;
       }
       }
-        .noOpen{
+          .noOpen{
 .Etaxi{
         width: 90px;
         height:30px;
@@ -250,8 +249,13 @@ left: 0;
       }
 
 @media screen and (max-width: 700px) {
+    .SideBar{
+        top: 0;
+        right: 0;
+    }
     .out_Sidebar{
 .SideBar_Open,.noOpen{
+    
     display: none;
     // transform: translateX(-100px);
 }
@@ -260,7 +264,7 @@ left: 0;
 .DashboardLayout_Body_Open,.DashboardLayout .DashboardLayout_Body{
     left: 30px !important;
     width : calc(100% - 60px)  !important;
-}   
+}
 .ar{
     .DashboardLayout_Body{
         right: 30px !important;
