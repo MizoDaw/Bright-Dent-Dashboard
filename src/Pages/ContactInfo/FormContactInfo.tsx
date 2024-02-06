@@ -6,27 +6,29 @@ import { FakeSelectData } from '../../Layout/app/Const';
 import { useFormikContext } from 'formik';
 
 import { DatePicker } from 'antd';
-import { usePageState } from '../../lib/state mangment/LayoutPagestate';
-import { useTranslation } from 'react-i18next';
 
-function FormContactus() {
+function FormContact() {
+  const formik = useFormikContext<any>();
 
-  const [t] = useTranslation()
-  const  {objectToEdit:letter} = usePageState()
 
 
   return (
-    <div className="contact-letter">
-    <h3>{t('contact_us_letter')}</h3>
-    <div className="letter-content">
-      <p><strong>{t('name')}:</strong> {letter.name}</p>
-      <p><strong>{t("email")}:</strong> {letter.email}</p>
-      <p><strong>{t("message")}:</strong> <p>{letter.message}</p></p>
-    </div>
-  </div>
+    <Row xs={1} sm={1} md={1} lg={2} xl={2}>
+      <Col>
+      {/* name from form utils */}
+        <KarimField name="key" type="text" label='key'  placeholder='key' />
+        
+      </Col>
+      <Col>
+      {/* name from form utils */}
+        <KarimField name="value" type="text" label='value'  placeholder='value' />
+        
+      </Col>
+   
+  </Row>
   )
 }
 
-export default FormContactus
+export default FormContact
 
 
