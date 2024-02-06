@@ -63,7 +63,7 @@ export const RoutesLinks: RoutesLinksType[] = [
         name: "country",
         
         icon: <RiEarthFill   size={20} />,
-        href: "/country",
+        href: "/",
         element: <CountryPage/>,
     }, 
     {
