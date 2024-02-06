@@ -24,19 +24,16 @@ interface ValidateSchema  extends formUtilCommon{
 }
 
 export const getInitialValues = (objectToEdit: any | null = null): InitialValues => {
-  // const Moaz = objectToEdit.slider_translations.find((translate:any) => translate.locale == '1')?.image;
 
   console.log(objectToEdit?.slider_translations);
 
   return {
     id:objectToEdit?.id?? 0 ,
-    image_en:objectToEdit?.slider_translations.find((translate:any) => translate.locale == '1')?.image?? "",
-    image_ar:objectToEdit?.slider_translations.find((translate:any) => translate.locale == '2')?.image??"",
+    image_en:objectToEdit?.slider_translations?.at(0).image?? "",
+    image_ar:objectToEdit?.slider_translations?.at(1).image??"",
     is_active:objectToEdit?.is_active?? true,
 
   }
-
-
 };
 
 export const getValidationSchema = (editMode: boolean = false): Yup.Schema<ValidateSchema> => {

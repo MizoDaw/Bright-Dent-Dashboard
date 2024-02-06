@@ -9,7 +9,6 @@ const PrivacyPage: FC = () => {
   
   
   const privacy: any = data?.translations;
-  console.log(privacy);
   return (
     <PageStructure
       title="privacy"
