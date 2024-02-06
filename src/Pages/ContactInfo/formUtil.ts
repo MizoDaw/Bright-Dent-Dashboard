@@ -15,6 +15,9 @@ interface ObjectToEdit extends formUtilCommon {
 }
 
 interface InitialValues extends ObjectToEdit {
+  email:string,
+  location:string,
+  phone:number,
 
 }
 interface ValidateSchema  extends formUtilCommon{

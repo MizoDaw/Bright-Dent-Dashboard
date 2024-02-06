@@ -3,40 +3,41 @@ import * as Yup from "yup";
 import { buildFormData } from "../../api/helper/buildFormData";
 
 interface formUtilCommon {
+  image_en:any,
+  image_ar:any
 
 }
 
 interface ObjectToEdit extends formUtilCommon {
-
-    id?:number,
-  image_en:any,
-  image_ar:any
-
-
+  id?:number,
+  is_active?: boolean;
 
 }
 
 export interface InitialValues extends ObjectToEdit {
-  is_active?: any;
-  image_en:any,
-  image_ar:any
+  is_active?: boolean;
+  id?:number,
 
 }
 interface ValidateSchema  extends formUtilCommon{
-  image_en:any
-  image_ar:any
 
 }
 
-export const getInitialValues = (objectToEdit: any | null = null): InitialValues => {
+export const getInitialValues = (objectToEdit: any | null = null) => {
  
   console.log('====================================');
   console.log(objectToEdit?.slider_translations);
   console.log('====================================');
+export const getInitialValues = (objectToEdit: ObjectToEdit | null = null): InitialValues => {
+  // const Moaz = objectToEdit.slider_translations.find((translate:any) => translate.locale == '1')?.image;
+
+// console.log(objectToEdit?.slider_translations[0].image);
+
   return {
     id:objectToEdit?.id?? 0 ,
-    image_en:objectToEdit?.image_en,
-    image_ar:objectToEdit?.image_ar
+    image_en:objectToEdit?.image_en?? "",
+    image_ar:objectToEdit?.image_ar??"",
+    is_active:objectToEdit?.is_active?? true,
 
   }
 

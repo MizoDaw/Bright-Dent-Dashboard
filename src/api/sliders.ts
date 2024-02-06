@@ -18,5 +18,5 @@ import useUpdateMutation from "./helper/useUpdateMutation"
   export const useGetSliders = (params?:any) => useGetQuery(KEY, API.GET, params);
   export const useAddSliders = () => useAddMutation(KEY, API.ADD);
   export const useUpdateSliders = () => useUpdateMutation(KEY, API.UPDATE);
-  export const useDeleteSliders = () =>useDeleteMutation(KEY, API.DELETE);
+  export const useDeleteSliders = () =>useDeleteMutation(KEY, API.DELETE ,'slider_id');
   export const useUpdateSliderStatus = () => useToggleStatus(KEY, API.UPDATE_STATUS, 'slider_id');

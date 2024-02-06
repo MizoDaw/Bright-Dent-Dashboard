@@ -23,7 +23,6 @@ function AddSlidersModal() {
   }
   return (
     <LayoutModal
-    
      isAddModal={true}
      getInitialValues={getInitialValues()} 
      handleSubmit={handelSubmit} 

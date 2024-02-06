@@ -12,30 +12,18 @@ const useTableColumns :any = () => {
     () => [
  
       {
-        name: t("email"),
+        name: t("key"),
         sortable: false,
         center: "true",
-        cell: (row:any) => row?.email
+        cell: (row:any) => row?.key
+        
       },
      
       {
-        name: t("name"),
+        name: t("value"),
         sortable: false,
         center: "true",
-        cell: (row:any) => row?.name
-      },
-      {
-        name: t("created_at"),
-        sortable: false,
-        center: "true",
-        cell: (row:any) => {
-          
-          const inputDate = new Date(row?.created_at)
-          console.log(inputDate);
-          
-           return   `${inputDate.getFullYear()}-${(inputDate.getMonth() + 1)}-${(inputDate.getDate())} ${(inputDate.getHours())}:${(inputDate.getMinutes())}:${(inputDate.getSeconds())}`;
-
-        }
+        cell: (row:any) => row?.value
       },
       {
         name: "#",
@@ -50,9 +38,9 @@ const useTableColumns :any = () => {
               objectToEdit={row}
               showEdit={true}
               showView={false}
-              showDelete={false}
               // showDelete={false}
-              onDelete={() => fnDelete({ id: row.id })}
+              // showDelete={false}
+              // onDelete={() => fnDelete({ id: row.id })}
             />
         ),
       },

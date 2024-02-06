@@ -54,7 +54,7 @@ const useTableColumns = () => {
               objectToEdit={row}
               showEdit={true}
               showView={false}
-              onDelete={() => deleteMutation.mutate({ id: row.id })}
+              onDelete={() => deleteMutation.mutate({ slider_id: row.id })}
               />
         ),
       },
