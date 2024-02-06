@@ -27,10 +27,8 @@ function AddCountryModal() {
      getInitialValues={getInitialValues()} 
      handleSubmit={handelSubmit} 
      status={status as QueryStatusEnum}
-     headerText={t('Add') +t('country')}
-
+     headerText={t('Add') + t('country')}
      getValidationSchema={getValidationSchema()}>
-
     <FormCountry />
   </LayoutModal>
   )

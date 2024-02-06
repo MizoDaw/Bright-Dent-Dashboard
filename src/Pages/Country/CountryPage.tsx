@@ -6,7 +6,7 @@ import LyTable from '../../Layout/Dashboard/LyTable'
 import useTableColumns from './useTableColumns'
 import { QueryStatusEnum } from '../../config/QueryStatus'
 import AddCountryModal from './AddCountryModal'
-import EditCountryMedia from './EditCountry'
+import EditCountry from './EditCountry'
 import { useGetCountry } from '../../api/Country'
 
 function CountryPage() {
@@ -29,7 +29,7 @@ function CountryPage() {
         />
 
     <AddCountryModal />
-    <EditCountryMedia/>
+    <EditCountry/>
     </DashBody>
   )
 }

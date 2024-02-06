@@ -13,11 +13,11 @@ function FormCountry() {
   return (
     <Row xs={1} sm={1} md={1} lg={2} xl={2}>
     <Col>
-    <KarimField name="name_en" type="text"label='Country_name_en'  placeholder='placeholder' />
+    <KarimField name="en_name" type="text" label='Country_name_en'  placeholder='Country_name' />
 
     </Col>
     <Col>
-    <KarimField name="name_ar"  type="text" label='Country_name_ar' placeholder='placeholder'  />
+    <KarimField name="ar_name"  type="text" label='Country_name_ar' placeholder='Country_name'  />
 
     </Col>
 

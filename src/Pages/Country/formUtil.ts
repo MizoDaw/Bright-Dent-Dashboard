@@ -3,8 +3,8 @@ import * as Yup from "yup";
 import { buildFormData } from "../../api/helper/buildFormData";
 
 interface formUtilCommon {
-  country_en:any
-  country_ar:any,
+  en_name:any
+  ar_name:any,
 }
 
 interface ObjectToEdit extends formUtilCommon {
@@ -28,8 +28,8 @@ export const getInitialValues = (objectToEdit: ObjectToEdit | null = null): Init
   
   return {
     id:objectToEdit?.id?? 0 ,
-    country_en:objectToEdit?.country_en?? "",
-    country_ar:objectToEdit?.country_ar?? "",
+    en_name:objectToEdit?.en_name?? "",
+    ar_name:objectToEdit?.ar_name?? "",
     is_active:objectToEdit?.is_active?? true,
   }
 };
@@ -37,8 +37,8 @@ export const getInitialValues = (objectToEdit: ObjectToEdit | null = null): Init
 export const getValidationSchema = (editMode: boolean = false): Yup.Schema<ValidateSchema> => {
     // validate input  
   return Yup.object().shape({
-    country_en:Yup.mixed().required('required'),
-    country_ar:Yup.mixed().required("required"),
+    en_name:Yup.mixed().required('required'),
+    ar_name:Yup.mixed().required("required"),
   });
 };
 

@@ -12,9 +12,8 @@ function EditCountry() {
   const {status , mutate } = useUpdateCountry();
 
   const handleSubmit = (value:InitialValues)=>{
-      // console.log(value);
 
-      const dataToSend = getDataToSend({...value ,social_media_id:value.id , is_active :value.is_active ? true:false })
+      const dataToSend = getDataToSend({...value ,country_id:value.id  })
 
       mutate(dataToSend)
       
