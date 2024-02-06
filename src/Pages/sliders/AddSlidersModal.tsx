@@ -23,11 +23,12 @@ function AddSlidersModal() {
   }
   return (
     <LayoutModal
+    
      isAddModal={true}
      getInitialValues={getInitialValues()} 
      handleSubmit={handelSubmit} 
      status={status as QueryStatusEnum}
-     headerText={t('Add') +t('sliders')}
+     headerText={t('Add') +t('slider')}
      
      getValidationSchema={getValidationSchema()}>
 

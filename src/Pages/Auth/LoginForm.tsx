@@ -23,7 +23,6 @@ const LoginForm = () => {
 
   const handelSubmit = (values:any)=>{
 
-    console.log(values);
     mutate(values)
     // Implemnt Your Auth Code 
   }

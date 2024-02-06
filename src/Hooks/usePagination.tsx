@@ -2,7 +2,6 @@ import { Pagination } from "antd";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
 
 export const PaginationBody = ({ data }: any) => {
-  console.log(data , "ibrahimmmmmmmmm");
   
   const navigate = useNavigate();
   const location = useLocation();

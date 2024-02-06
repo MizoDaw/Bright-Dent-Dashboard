@@ -8,7 +8,6 @@ const AboutUsPage: FC = () => {
   const { data, isLoading, isError } = useGetAboutUs();
 
   const about_us: any = data?.translations;
-  console.log(about_us);
   
 
   return (
