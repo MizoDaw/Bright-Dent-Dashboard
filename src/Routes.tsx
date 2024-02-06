@@ -73,7 +73,6 @@ export const RoutesLinks: RoutesLinksType[] = [
         href: "/SocialMedia",
         element: <SocialMediaPage/>,
     },
-    
     {
         name: "information",
         icon: <BsInfoCircle size={20} />,
