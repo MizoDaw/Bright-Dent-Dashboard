@@ -12,6 +12,8 @@
 @include Shadow;
 overflow-y: auto;
 overflow-x: hidden;
+top: 0;
+left: 0;
 &::-webkit-scrollbar {
   width: 7px; 
     cursor: pointer;
@@ -239,7 +241,7 @@ overflow-x: hidden;
         margin-inline: 40px;
       }
       }
-          .noOpen{
+        .noOpen{
 .Etaxi{
         width: 90px;
         height:30px;
@@ -351,4 +353,10 @@ overflow-x: hidden;
             overflow-x: hidden;
 
 
+}
+
+@media screen and (max-width:700px) {
+    .HamburgerMenu{
+        display: none !important;
+    }
 }
