@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next'
 function useAxios() {
   const {isAuthenticated , token}= useAuthState()  
   const {i18n} = useTranslation()
-  console.log(i18n.language);
   
   const buildAxios = new AxiosBuilder().
   withBaseURL(BaseURL)
