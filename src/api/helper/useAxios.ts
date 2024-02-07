@@ -13,7 +13,7 @@ function useAxios() {
   .withResponseType('json')
   .withTimeout(120000)
   .withHeaders(
-    {"Content-Type" :"application/json",
+    {"Content-Type" :"multipart/form-data",
   "language":i18n.language
 })
 
@@ -21,7 +21,7 @@ function useAxios() {
   if(isAuthenticated){
 
     buildAxios.withHeaders({ Authorization: 'Bearer '+ token ,
-    "Content-Type" :"application/json",
+    "Content-Type" :"multipart/form-data",
     "language":i18n.language })
   } 
   

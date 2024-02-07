@@ -27,6 +27,7 @@ export const getInitialValues = (objectToEdit: ObjectToEdit | null = null): Init
   // console.log(objectToEdit);
   
   return {
+    id: objectToEdit?.id,
     social_media_link:objectToEdit?.social_media_link?? "",
     social_media_image:objectToEdit?.social_media_image?? "",
     is_active:objectToEdit?.is_active?? true,
@@ -42,12 +43,23 @@ export const getValidationSchema = (editMode: boolean = false): Yup.Schema<Valid
 };
 
 export const getDataToSend = (values: any): FormData => {
-  const data = { ...values };
-  console.log(data);
+  const data = {...values} ;
+  // console.log(data);
 
-  if(typeof data['social_media_image'] == 'string') delete data['social_media_image']
+  if(typeof data['social_media_image'] == 'string') {delete data['social_media_image']}
+
+
+
+
   const formData = new FormData();
   buildFormData(formData, data);
+  
+  console.log(data);
+  
+
+  console.log(formData.get('social_media_image'));
+  
+
   return formData;
 };
 

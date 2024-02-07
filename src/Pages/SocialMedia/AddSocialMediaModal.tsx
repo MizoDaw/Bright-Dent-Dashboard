@@ -18,8 +18,10 @@ function AddSocialMediaModal() {
     // delete values['id']
     // console.log(values);
 
-    const dataToSend = getDataToSend(values)
-    mutate(dataToSend)
+   
+    
+    console.log(getDataToSend(values))
+    mutate(getDataToSend(values))
 
     // Submit Value
   }

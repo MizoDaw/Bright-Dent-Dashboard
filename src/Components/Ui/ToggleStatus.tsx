@@ -13,7 +13,7 @@ export const ToggleStatus = ({ object, toggleMutation, ...props }:any) => {
   const handleSwitch = () => {
     toggleMutation.mutate({
       id: object.id,
-      new_status: !object.is_active,
+      new_status: object.is_active == true ? 0 :1,
     });
   };
 
