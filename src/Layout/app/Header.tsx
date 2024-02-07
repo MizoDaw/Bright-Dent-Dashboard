@@ -38,7 +38,7 @@ const Header = () => {
     <div className='Header'>
       <div className='Header_Left'> 
           <WithDrawer
-    title="Cart Item"
+    title=""
       button={ 
           <div className="Cart_Icon">
           <GiHamburgerMenu  />
