@@ -25,7 +25,6 @@ interface ValidateSchema  extends formUtilCommon{
 
 export const getInitialValues = (objectToEdit: any | null = null): InitialValues => {
 
-  console.log(objectToEdit?.slider_translations);
 
   return {
     id:objectToEdit?.id?? 0 ,

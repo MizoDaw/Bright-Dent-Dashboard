@@ -16,8 +16,8 @@ function AddSocialMediaModal() {
   const handelSubmit = (values:any )=>{
     values['is_active'] = values['is_active'] ==1 ?true :false
     // delete values['id']
-    console.log(values);
-    
+    // console.log(values);
+
     const dataToSend = getDataToSend(values)
     mutate(dataToSend)
 
