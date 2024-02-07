@@ -1,23 +1,10 @@
 import { ReactNode, lazy } from "react";
 
 // Icons Import 
-
-import { Home } from "react-feather";
-import { AiFillQuestionCircle, AiFillStar} from "react-icons/ai"
-import {FaUserFriends , FaUser, FaHome, FaSadCry, FaProductHunt, FaBorderAll, FaAdversal } from "react-icons/fa"
-import { MdOutlineCategory, MdPrivacyTip, MdProductionQuantityLimits } from "react-icons/md";
-import {DiDatabase} from "react-icons/di"
+import { AiFillQuestionCircle} from "react-icons/ai"
+import { MdPrivacyTip } from "react-icons/md";
 import { FiMail } from "react-icons/fi";
-import {CgUnavailable} from "react-icons/cg"
-import {BsCode, BsInfoCircle} from "react-icons/bs"
-import {AiOutlineTransaction ,AiFillSetting ,AiFillGift} from "react-icons/ai"
-import { IoIosNotificationsOutline, IoIosPaper, } from "react-icons/io";
-import { BiCategory, BiLockAlt } from "react-icons/bi";
-import { RiCouponFill } from "react-icons/ri";
-import { IoPersonAddSharp } from "react-icons/io5";
-import { MdOutlineManageAccounts } from "react-icons/md";
-import { TbBrandSocketIo } from "react-icons/tb";
-import { BsPersonFillAdd } from "react-icons/bs";
+import {BsInfoCircle} from "react-icons/bs"
 import { FaMessage } from "react-icons/fa6";
 import { TfiLayoutSlider } from "react-icons/tfi";
 import { RiEarthFill } from "react-icons/ri";
@@ -73,28 +60,24 @@ export const RoutesLinks: RoutesLinksType[] = [
         href: "/SocialMedia",
         element: <SocialMediaPage/>,
     },
+   
     {
-        name: "information",
-        icon: <BsInfoCircle size={20} />,
-        element: <></>,
-        children :[
-        {
-        name: "privacy",
-        icon: <MdPrivacyTip size={20} />,
-        href: "/Information/privacy",
-        element: <PrivacyPage/>
-        },
-        {
-        name: "about_us",
-        icon: <AiFillQuestionCircle size={20} />,
-        href: "/Information/AboutUs",
-        element: <AboutUsPage />
-        },
-      ],
+    name: "privacy",
+    icon: <MdPrivacyTip size={20} />,
+    href: "/Information/privacy",
+    element: <PrivacyPage/>
+    },
+    {
+    name: "about_us",
+    icon: <AiFillQuestionCircle size={20} />,
+    href: "/Information/AboutUs",
+    element: <AboutUsPage />
+    },
+      
 
 
       
-    },
+    
           // hidden 
 
     

@@ -9,13 +9,15 @@ type AxiosResponse = {
   success:true 
 };
 
-function useAddMutation(key: string, url: string): UseMutationResult<AxiosResponse, unknown, any, unknown> {
+function useAddMutation(key: string, url: string): any {
   const axios = useAxios();
   const [t] = useTranslation();
   const queryClient = useQueryClient();
 
-  return useMutation<AxiosResponse, unknown, any, unknown>(
+  return useMutation<any>(
     async (dataToSend) => {
+      console.log("ibrahim",dataToSend);
+      
       const { data } = await axios.post(url, dataToSend);
       return data;
     },
