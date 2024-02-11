@@ -28,8 +28,6 @@ const SelectField = ({ name, label, placeholder, isDisabled,option,isMulti,onCha
             {...(isMulti && { mode: "multiple" })}
             onChange={onChange || SelecthandleChange}
 
-
-
           />
         </Form.Item>
       </div>

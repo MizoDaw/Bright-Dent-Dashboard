@@ -932,7 +932,12 @@
         "Country_name_en":"Country Name en",
         "Country_name":"Country Name",
         "Edit Contact Info":"Edit Contact Info",
-        "key":"Key"
+        "key":"Key",
+        "Category Image":"Category Image",
+        "access_y":"Access Y Feild",
+        "access_x":"Access X Feild",
+        "Category name":"Category Name",
+        "Loading Content":"Loading Content"
         
 
 

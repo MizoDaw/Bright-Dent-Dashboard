@@ -44,22 +44,11 @@ export const getValidationSchema = (editMode: boolean = false): Yup.Schema<Valid
 
 export const getDataToSend = (values: any): FormData => {
   const data = {...values} ;
-  // console.log(data);
 
   if(typeof data['social_media_image'] == 'string') {delete data['social_media_image']}
 
-
-
-
   const formData = new FormData();
   buildFormData(formData, data);
-  
-  console.log(data);
-  
-
-  console.log(formData.get('social_media_image'));
-  
-
   return formData;
 };
 

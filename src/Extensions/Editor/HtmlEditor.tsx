@@ -16,7 +16,7 @@ import {
   BtnNumberedList,
   BtnUndo,
   Toolbar,
-  
+
 } from 'react-simple-wysiwyg';
 
 
@@ -41,7 +41,7 @@ const HtmlEditor: FC<HtmlEditorProps> = ({ langCode, name, editorState, ...props
   return (
     <EditorProvider>
 
-    <Editor value={value} onChange={onChange}  dir={langCode == 2 ?"rtl":'ltr'} >
+      <Editor value={value} onChange={onChange}  dir={langCode == 2 ?"rtl":'ltr'} >
         <Toolbar>
           <BtnBold />
           <BtnItalic />
@@ -54,8 +54,6 @@ const HtmlEditor: FC<HtmlEditorProps> = ({ langCode, name, editorState, ...props
           <BtnLink/>
           <BtnStyles/>
           <BtnRedo/>
-     
-
         </Toolbar>
       </Editor>
     </EditorProvider>

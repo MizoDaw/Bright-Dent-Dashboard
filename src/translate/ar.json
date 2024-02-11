@@ -971,7 +971,13 @@
         "Country_name_en":"اسم الدولة انكليزي",
         "Country_name":"اسم الدولة",
         "Edit Contact Info":"تعديل معلومات الاتصال",
-        "key":"المفتاح"
+        "key":"المفتاح",
+        "Category Image": "صورة الفئة",
+        "access_y": "الوصول للحقل Y",
+        "access_x": "الوصول للحقل Y",
+        "Category name": "اسم الفئة",
+        "Loading Content":"يتم تحميل المحتوى"
+
 
 
 

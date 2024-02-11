@@ -18,6 +18,7 @@ import SocialMediaPage from "./Pages/SocialMedia/SocialMediaPage";
 import SlidersPage from "./Pages/sliders/SlidersPage";
 import ContactInfoPage from "./Pages/ContactInfo/ContactusPage";
 import CountryPage from "./Pages/Country/CountryPage";
+import CategoryPage from "./Pages/category/CategoryPage";
 
 
 interface RoutesLinksType {
@@ -38,6 +39,12 @@ export const RoutesLinks: RoutesLinksType[] = [
         icon: <TfiLayoutSlider   size={20} />,
         href: "/slider",
         element: <SlidersPage/>,
+    },
+    {
+        name: "category",
+        icon: <BsInfoCircle   size={20} />,
+        href: "/category",
+        element: <CategoryPage/>,
     },
     {
         name: "ContactInfo",
